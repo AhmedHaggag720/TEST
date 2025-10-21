@@ -1,10 +1,11 @@
 {
   "name": "face-verification-microservice",
   "version": "1.0.0",
-  "main": "src/server.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/server.js",
-    "dev": "NODE_ENV=development nodemon src/server.js"
+    "start": "node src/index.js",
+    "dev": "NODE_ENV=development nodemon src/index.js",
+    "prod": "NODE_ENV=production node src/index.js"
   },
   "dependencies": {
     "express": "^4.18.2",
