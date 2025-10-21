@@ -1,0 +1,23 @@
+{
+  "name": "face-verification-microservice",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "dev": "NODE_ENV=development nodemon src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "onnxruntime-node": "^1.22.0",
+    "pg": "^8.11.0",
+    "sharp": "^0.32.4",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "description": "AI Face-Verification Microservice",
+  "author": "Ahmed Haggag",
+  "license": "ISC"
+}
