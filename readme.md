@@ -12,13 +12,30 @@ A simple Node.js microservice for face verification using AI models (BlazeFace +
 
 ## Quick Start
 
-### 1. Install
+### 1. Download AI Models
+
+Download the required ONNX models from Google Drive:
+
+**📥 [Download Models Here](https://drive.google.com/drive/folders/1m_bl1wRSJayE-6tEU2bcgvs8SNmYFgKc?usp=sharing)**
+
+After downloading, place the model files in the `models/` folder:
+
+```
+TEST/
+├── models/
+│   ├── arcface.onnx      ← Place ArcFace model here
+│   └── blazeface.onnx    ← Place BlazeFace model here
+├── src/
+└── package.json
+```
+
+### 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 2. Run
+### 3. Run the Server
 
 ```bash
 npm start
